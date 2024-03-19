@@ -1,0 +1,282 @@
+@font-face {
+    font-family: "Barlow700";
+    src: url("../fonts/Barlow700.ttf");
+}
+
+@font-face {
+    font-family: "Barlow400";
+    src: url("../fonts/Barlow400.ttf");
+}
+
+@font-face {
+    font-family: "Fraunces900";
+    src: url("../fonts/Fraunces900.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 44px 80px;
+}
+
+.header_logo {
+    width: 235px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+
+.item_list {
+    list-style-type: none;
+}
+
+.item_link {
+    text-decoration: none;
+    font-family: "Barlow700";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.9230769276618958px;
+    color: #83888F;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.item_link:hover {
+    color: #333D4B;
+    transition: .5s;
+}
+
+.fa-bars {
+    display: none !important;
+    color: #333D4B;
+    font-size: 20px;
+}
+
+/* main code */
+.main {
+    padding: 0px 80px;
+}
+
+.main_content {
+    width: 100%;
+    background-image: url("../images/main1.jpg");
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 117px 0px 116px 85px;
+
+}
+
+.main_title {
+    max-width: 493px;
+    color: #FEFCF7;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 72px;
+    font-family: "Fraunces900";
+    margin-bottom: 32px;
+}
+
+.main_text {
+    max-width: 440px;
+    font-family: "Barlow400";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #FEFCF7;
+    margin-bottom: 56px;
+}
+
+.main_btn {
+    width: 217px;
+    height: 56px;
+    font-family: "Fraunces900";
+    color: #FEFCF7;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 25px;
+    background-color:
+        #66D2CF;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.main_btn:hover {
+    color: #66D2CF;
+    background-color: transparent;
+    border-color: #66D2CF;
+    transition: .5s;
+}
+
+@media only screen and (max-width:1024px) {
+    .main_content {
+        background-position: center;
+        padding: 50px 50px;
+    }
+
+    .main_title {
+        font-size: 64px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .header {
+        padding: 40px 40px 53px 40px;
+    }
+
+    .main {
+        padding: 0px 40px;
+    }
+
+    .main_content {
+        padding: 104px 58px;
+    }
+
+    .main_title {
+        max-width: 329px;
+        font-size: 48px;
+        line-height: 48px;
+        margin-bottom: 24px;
+    }
+
+    .main_text {
+        max-width: 398px;
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 40px;
+    }
+
+}
+
+
+@media only screen and (max-width:670px) {
+    .header {
+        padding: 20px 0px;
+    }
+
+    .main {
+        padding: 0px;
+    }
+
+    .main_title,
+    .main_text {
+        max-width: 100%;
+    }
+
+    .main_title {
+        font-size: 36px;
+        line-height: 35px;
+    }
+
+    .main_content {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:580px) {
+    .header {
+        padding: 20px 0px;
+    }
+
+    .header_logo {
+        width: 150px;
+    }
+
+    .item {
+        gap: 20px;
+    }
+
+    .item_link {
+        font-size: 10px;
+        line-height: 12px;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .container {
+        padding: 0px 10px;
+    }
+
+    .header {
+        padding: 10px 0px;
+    }
+
+    .header_logo {
+        width: 120px;
+    }
+
+    .item {
+        gap: 15px;
+    }
+
+    .item_link {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .header {
+        padding: 32px 24px 40px 24px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .header_logo {
+        width: 162px;
+    }
+
+    .fa-bars {
+        display: block !important;
+    }
+
+    .main {
+        padding: 0px 24px;
+    }
+
+    .main_content {
+        width: 100%;
+        background-image: url("../images/main_media_img.jpg");
+        padding: 100px 24px;
+
+    }
+
+    .main_title {
+        font-size: 38px;
+        line-height: 40px;
+        margin-bottom: 24px;
+    }
+
+    .main_text {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 39px;
+    }
+
+}
+
+@media only screen and (max-width:370px) {
+    .main {
+        padding: 0px;
+    }
+}
